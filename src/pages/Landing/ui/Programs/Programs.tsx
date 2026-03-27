@@ -2,47 +2,35 @@ import styles from './Programs.module.scss'
 import MarkaIcon from '@/shared/api/assets/icons/marka.svg'
 import PeopleIcon from '@/shared/api/assets/icons/people.svg'
 import SheetsIcon from '@/shared/api/assets/icons/sheets.svg'
-import { info } from 'console'
+
+import Lake from '@/shared/api/assets/images/lake.png'
+import Mount from '@/shared/api/assets/images/mount.png'
+import Summer from '@/shared/api/assets/images/summer.png'
+import Winter from '@/shared/api/assets/images/winter.png'
 
 export const Programs = () => {
-    const {
-        programs,
-        container,
-        content,
-        info,
-        title,
-        subtitle,
-        description,
-        features,
-        feature,
-        iconWrapper,
-        featureTitle,
-        featureText,
-        button,
-        gallery,
-        galleryImage,
-    } = styles
+
 
     return (
-        <section className={programs}>
-            <div className={container}>
-                <div className={content}>
-                    <div className={info}>
-                        <h3 className={subtitle}>наше предложение</h3>
-                        <h2 className={title}>Лучшие программы для тебя</h2>
-                        <p className={description}>
+        <section className={styles.programs}>
+            <div className={styles.container}>
+                <div className={styles.content}>
+                    <div className={styles.info}>
+                        <h3 className={styles.subtitle}>наше предложение</h3>
+                        <h2 className={styles.title}>Лучшие программы для тебя</h2>
+                        <p className={styles.description}>
                             Его корни уходят в один фрагмент классической латыни 45 года н.э.,
                             то есть более двух тысячелетий назад. Ричард МакКлинток, профессор
                             латыни из колледжа.
                         </p>
-                        <div className={features}>
-                            <div className={feature}>
-                                <div className={iconWrapper}>
+                        <div className={styles.features}>
+                            <div className={styles.feature}>
+                                <div className={styles.iconWrapper}>
                                     <img src={PeopleIcon} alt="Опытный гид" />
                                 </div>
                                 <div>
-                                    <h3 className={featureTitle}>Опытный гид</h3>
-                                    <p className={featureText}>
+                                    <h3 className={styles.featureTitle}>Опытный гид</h3>
+                                    <p className={styles.featureText}>
                                         Для современного мира базовый вектор развития предполагает
                                         независимые способы реализации соответствующих условий
                                         активизации.
@@ -50,13 +38,13 @@ export const Programs = () => {
                                 </div>
                             </div>
 
-                            <div className={feature}>
-                                <div className={iconWrapper}>
+                            <div className={styles.feature}>
+                                <div className={styles.iconWrapper}>
                                     <img src={SheetsIcon} alt="Безопасный поход" />
                                 </div>
                                 <div>
-                                    <h3 className={featureTitle}>Безопасный поход</h3>
-                                    <p className={featureText}>
+                                    <h3 className={styles.featureTitle}>Безопасный поход</h3>
+                                    <p className={styles.featureText}>
                                         Для современного мира базовый вектор развития предполагает
                                         независимые способы реализации соответствующих условий
                                         активизации.
@@ -64,13 +52,13 @@ export const Programs = () => {
                                 </div>
                             </div>
 
-                            <div className={feature}>
-                                <div className={iconWrapper}>
+                            <div className={styles.feature}>
+                                <div className={styles.iconWrapper}>
                                     <img src={MarkaIcon} alt="Лояльные цены" />
                                 </div>
                                 <div>
-                                    <h3 className={featureTitle}>Лояльные цены</h3>
-                                    <p className={featureText}>
+                                    <h3 className={styles.featureTitle}>Лояльные цены</h3>
+                                    <p className={styles.featureText}>
                                         Для современного мира базовый вектор развития предполагает
                                         независимые способы реализации соответствующих условий
                                         активизации.
@@ -78,28 +66,28 @@ export const Programs = () => {
                                 </div>
                             </div>
                         </div>
-                        <button className={button}>Стоимость программ</button>
+                        <button className={styles.button}>Стоимость программ</button>
                     </div>
 
-                    <div className={gallery}>
+                    <div className={styles.gallery}>
                         <img
-                            className={galleryImage}
-                            src="/images/programs/lake.png"
+                            className={styles.galleryImage}
+                            src={Lake}
                             alt="Озеро в горах"
                         />
                         <img
-                            className={galleryImage}
-                            src="/images/programs/mount.png"
+                            className={styles.galleryImage}
+                            src={Mount}
                             alt="Путешествие в горах"
                         />
                         <img
-                            className={galleryImage}
-                            src="/images/programs/winter.png"
+                            className={styles.galleryImage}
+                            src={Winter}
                             alt="Зимняя программа"
                         />
                         <img
-                            className={galleryImage}
-                            src="/images/programs/summer.png"
+                            className={styles.galleryImage}
+                            src={Summer}
                             alt="Летняя программа"
                         />
                     </div>
