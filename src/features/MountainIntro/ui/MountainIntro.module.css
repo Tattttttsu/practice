@@ -1,0 +1,85 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background: #fff;
+  gap: 50px;
+}
+
+.imageContainer {
+  position: relative;
+  flex: 1;
+  height: 450px;
+}
+
+.bgImage img {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.fgImage {
+  position: absolute;
+  bottom: -40px;
+  left: 80px;
+}
+
+.fgImage img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 30px;
+  border: 15px solid #fff; /* Белая рамка как на макете */
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.label {
+  color: #c4a484; /* Золотистый цвет */
+  text-transform: lowercase;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 36px;
+  color: #1a2e26; /* Темно-зеленый */
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.ctaButton {
+  background: #1a2e26;
+  color: #fff;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
