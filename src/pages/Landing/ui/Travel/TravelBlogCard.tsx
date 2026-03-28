@@ -1,28 +1,38 @@
+import styles from './Travel.module.scss'
+
 type Props = {
-    image: string
-    title: string
-    description: string
-    date: string
+  image: string
+  title: string
+  description: string
+  date: string
+  dateTime: string
 }
 
 export const TravelBlogCard = ({
-    image,
-    title,
-    description,
-    date,
+  image,
+  title,
+  description,
+  date,
+  dateTime,
 }: Props) => {
-    return (
-        <article>
-            <img src={image} alt={title} />
-            <div>
-                <h3>{title}</h3>
-                <p>{description}</p>
+  return (
+    <article className={styles.blogitem}>
+      <img src={image} alt={title} />
+      <div className={styles.blogtext}>
+        <div>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
 
-                <div>
-                    <time dateTime={date}>{date}</time>
-                    <a href="#">читать статью</a>
-                </div>
-            </div>
-        </article>
-    )
+        <div className={styles.blogdown}>
+          <time className={styles.blogdate} dateTime={dateTime}>
+            {date}
+          </time>
+          <a className={styles.bloglink} href="#">
+            читать статью
+          </a>
+        </div>
+      </div>
+    </article>
+  )
 }

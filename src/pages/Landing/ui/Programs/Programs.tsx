@@ -1,12 +1,12 @@
 import styles from './Programs.module.scss'
-import MarkaIcon from '@/shared/api/assets/icons/marka.svg'
-import PeopleIcon from '@/shared/api/assets/icons/people.svg'
-import SheetsIcon from '@/shared/api/assets/icons/sheets.svg'
+import MarkaIcon from '@/shared/assets/icons/marka.svg'
+import PeopleIcon from '@/shared/assets/icons/people.svg'
+import SheetsIcon from '@/shared/assets/icons/sheets.svg'
 
-import Lake from '@/shared/api/assets/images/lake.png'
-import Mount from '@/shared/api/assets/images/mount.png'
-import Summer from '@/shared/api/assets/images/summer.png'
-import Winter from '@/shared/api/assets/images/winter.png'
+import Lake from '@/shared/assets/images/lake.png'
+import Mount from '@/shared/assets/images/mount.png'
+import Summer from '@/shared/assets/images/summer.png'
+import Winter from '@/shared/assets/images/winter.png'
 
 export const Programs = () => {
 
