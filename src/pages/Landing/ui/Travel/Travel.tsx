@@ -6,11 +6,14 @@ import Alone from '@/shared/assets/images/Alone.png'
 import India from '@/shared/assets/images/India.png'
 import Plane from '@/shared/assets/images/Plane.png'
 
+import { Button } from '@/shared/ui/Button/Button'
+import { Container } from '@/shared/ui/Container/Container'
+
 
 export const Travel = () => {
     return (
         <section className={styles.blog}>
-            <div className={styles.container}>
+            <Container>
                 <h3 className={styles.subtitle}>делимся впечатлениями</h3>
                 <h2 className={styles.title}>Блог о путешествиях</h2>
                 <div className={styles.blogsList}>
@@ -44,11 +47,9 @@ export const Travel = () => {
                     />
                 </div>
                 <div className={styles.buttonWrapper}>
-                    <button className={styles.button}>
-                        Другие материалы
-                    </button>
+                    <Button>Наш pinterest</Button>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

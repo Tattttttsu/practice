@@ -1,24 +1,36 @@
 import styles from './Gallery.module.scss'
 
-export const Gallery = () => {
-    return (
-        <section className={styles.gallery}>
-            <h3 className={styles.subtitle}>фото-отчет</h3>
-            <h2 className={styles.title}>Делимся впечатлениями</h2>
-            <div className={styles.gallery}>
-                <img src="" className={styles.big} />
-                <img src="" />
-                <img src="" />
+import { Button } from '@/shared/ui/Button/Button'
+import { Container } from '@/shared/ui/Container/Container'
 
-                <img src="" />
-                <img src="" className={styles.big} />
-                <img src="" />
-            </div>
-            <div className={styles.buttonWrapper}>
-                <button className={styles.button}>
-                    Наш pinterest
-                </button>
-            </div>
-        </section>
-    )
+import gallery1 from '@/shared/assets/images/Sky.png'
+import gallery2 from '@/shared/assets/images/map.png'
+import gallery3 from '@/shared/assets/images/Dubai.png'
+import gallery4 from '@/shared/assets/images/boat.png'
+import gallery5 from '@/shared/assets/images/usamount.png'
+import gallery6 from '@/shared/assets/images/notebook.png'
+
+export const Gallery = () => {
+  return (
+    <section className={styles.gallerySection}>
+      <Container>
+        <h3 className={styles.subtitle}>Фото-отчет</h3>
+        <h2 className={styles.title}>Делимся впечатлениями</h2>
+
+        <div className={styles.gallery}>
+          <img src={gallery1} alt="Фото путешествия 1" className={styles.big} />
+          <img src={gallery2} alt="Фото путешествия 2" />
+          <img src={gallery3} alt="Фото путешествия 3" />
+
+          <img src={gallery4} alt="Фото путешествия 4" />
+          <img src={gallery5} alt="Фото путешествия 5" className={styles.big} />
+          <img src={gallery6} alt="Фото путешествия 6" />
+        </div>
+
+        <div className={styles.buttonWrapper}>
+          <Button>Наш pinterest</Button>
+        </div>
+      </Container>
+    </section>
+  )
 }
