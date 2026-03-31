@@ -1,21 +1,4 @@
-$yellow: #f2be22;
-$green: #1a3e3e;
-$text: #18121e;
-$text-light: #666;
-$bg: #f3f5f4;
-$white: #fdfdfd;
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 0;
-}
+@use '@/app/styles/variables' as *;
 
 .gallery {
   padding: 80px;
@@ -42,10 +25,6 @@ $white: #fdfdfd;
   justify-content: center;
   margin-top: 40px;
 }
-
-$yellow: #f2be22;
-$text: #18121e;
-$bg: #f3f5f4;
 
 .gallerySection {
   width: 100%;

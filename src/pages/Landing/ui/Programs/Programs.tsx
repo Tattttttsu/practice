@@ -10,6 +10,7 @@ import Winter from '@/shared/assets/images/winter.png'
 
 import { Button } from '@/shared/ui/Button/Button'
 import { Container } from '@/shared/ui/Container/Container'
+import { Feature } from '@/shared/ui/Feature/Feature'
 
 export const Programs = () => {
 
@@ -28,46 +29,24 @@ export const Programs = () => {
                                 латыни из колледжа.
                             </p>
                             <div className={styles.features}>
-                                <div className={styles.feature}>
-                                    <div className={styles.iconWrapper}>
-                                        <img src={PeopleIcon} alt="Опытный гид" />
-                                    </div>
-                                    <div>
-                                        <h3 className={styles.featureTitle}>Опытный гид</h3>
-                                        <p className={styles.featureText}>
-                                            Для современного мира базовый вектор развития предполагает
-                                            независимые способы реализации соответствующих условий
-                                            активизации.
-                                        </p>
-                                    </div>
-                                </div>
+                                <div className={styles.features}>
+                                    <Feature
+                                        icon={PeopleIcon}
+                                        title="Опытный гид"
+                                        text="Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации."
+                                    />
 
-                                <div className={styles.feature}>
-                                    <div className={styles.iconWrapper}>
-                                        <img src={SheetsIcon} alt="Безопасный поход" />
-                                    </div>
-                                    <div>
-                                        <h3 className={styles.featureTitle}>Безопасный поход</h3>
-                                        <p className={styles.featureText}>
-                                            Для современного мира базовый вектор развития предполагает
-                                            независимые способы реализации соответствующих условий
-                                            активизации.
-                                        </p>
-                                    </div>
-                                </div>
+                                    <Feature
+                                        icon={SheetsIcon}
+                                        title="Безопасный поход"
+                                        text="Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации."
+                                    />
 
-                                <div className={styles.feature}>
-                                    <div className={styles.iconWrapper}>
-                                        <img src={MarkaIcon} alt="Лояльные цены" />
-                                    </div>
-                                    <div>
-                                        <h3 className={styles.featureTitle}>Лояльные цены</h3>
-                                        <p className={styles.featureText}>
-                                            Для современного мира базовый вектор развития предполагает
-                                            независимые способы реализации соответствующих условий
-                                            активизации.
-                                        </p>
-                                    </div>
+                                    <Feature
+                                        icon={MarkaIcon}
+                                        title="Лояльные цены"
+                                        text="Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации."
+                                    />
                                 </div>
                             </div>
                             <div className={styles.buttonWrapper}>
