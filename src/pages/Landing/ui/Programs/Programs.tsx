@@ -10,7 +10,7 @@ import Winter from '@/shared/assets/images/winter.png'
 
 import { Button } from '@/shared/ui/Button/Button'
 import { Container } from '@/shared/ui/Container/Container'
-import { Feature } from '@/shared/ui/Feature/Feature'
+import { Feature } from '@/pages/Landing/ui/Programs/Feature/Feature'
 
 export const Programs = () => {
 

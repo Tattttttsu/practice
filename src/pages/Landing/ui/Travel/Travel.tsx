@@ -1,5 +1,5 @@
 import styles from './Travel.module.scss'
-import { TravelBlogCard } from './TravelBlogCard'
+import { TravelBlogCard } from './TravelBlogCard/TravelBlogCard'
 
 import Italy from '@/shared/assets/images/Italy.png'
 import Alone from '@/shared/assets/images/Alone.png'
