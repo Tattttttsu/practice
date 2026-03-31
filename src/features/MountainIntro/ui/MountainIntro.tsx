@@ -5,10 +5,10 @@ export const MountainIntro = () => {
     <section className={styles.wrapper}>
       <div className={styles.imageContainer}>
         <div className={styles.bgImage}>
-          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" alt="Mountains" />
+          <img src="/images/mountains.jpg" alt="Mountains" />
         </div>
         <div className={styles.fgImage}>
-          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Cabin" />
+          <img src="/images/cabin.jpg" alt="Cabin" />
           <div className={styles.playButton}>▶</div>
         </div>
       </div>
