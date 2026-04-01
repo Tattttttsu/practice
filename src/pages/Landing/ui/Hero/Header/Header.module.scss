@@ -1,0 +1,54 @@
+@use '@/app/styles/variables' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 16px;
+  margin-bottom: 300px;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.logo img {
+  display: block;
+  width: 137px;
+  height: auto;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: #fdfdfd;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.menu a:hover {
+  opacity: 0.8;
+}
+
+.buttonWrapper {
+  flex-shrink: 0;
+}
