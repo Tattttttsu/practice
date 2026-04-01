@@ -47,7 +47,7 @@ export const Travel = () => {
                     />
                 </div>
                 <div className={styles.buttonWrapper}>
-                    <Button>Наш pinterest</Button>
+                    <Button>Другие материалы</Button>
                 </div>
             </Container>
         </section>

@@ -1,4 +1,4 @@
-import styles from './Travel.module.scss'
+import styles from './TravelBlogCard.module.scss'
 
 type Props = {
   image: string

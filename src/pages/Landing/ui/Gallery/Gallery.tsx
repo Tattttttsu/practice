@@ -18,13 +18,36 @@ export const Gallery = () => {
         <h2 className={styles.title}>Делимся впечатлениями</h2>
 
         <div className={styles.gallery}>
-          <img src={gallery1} alt="Фото путешествия 1" className={styles.big} />
-          <img src={gallery2} alt="Фото путешествия 2" />
-          <img src={gallery3} alt="Фото путешествия 3" />
-
-          <img src={gallery4} alt="Фото путешествия 4" />
-          <img src={gallery5} alt="Фото путешествия 5" className={styles.big} />
-          <img src={gallery6} alt="Фото путешествия 6" />
+          <img
+            src={gallery1}
+            alt="Фото путешествия 1"
+            className={styles.item1}
+          />
+          <img
+            src={gallery2}
+            alt="Фото путешествия 2"
+            className={styles.item2}
+          />
+          <img
+            src={gallery3}
+            alt="Фото путешествия 3"
+            className={styles.item3}
+          />
+          <img
+            src={gallery4}
+            alt="Фото путешествия 4"
+            className={styles.item4}
+          />
+          <img
+            src={gallery5}
+            alt="Фото путешествия 5"
+            className={styles.item5}
+          />
+          <img
+            src={gallery6}
+            alt="Фото путешествия 6"
+            className={styles.item6}
+          />
         </div>
 
         <div className={styles.buttonWrapper}>
