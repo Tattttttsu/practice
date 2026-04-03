@@ -1,8 +1,13 @@
+import { MountainIntro } from "@/features/MountainIntro/ui/MountainIntro";
+import { PopularDestinations } from "@/features/PopularDestinations/ui/PopularDestinations";
+import { Footer } from "@/features/Footer/ui/Footer";
+
 export const LandingPage = () => {
   return (
     <>
-      <h1>тлбьоьлбдььлб</h1>
-      <div>fjdskjdskjsdkj</div>
+      <MountainIntro />
+      <PopularDestinations />
+      <Footer />
     </>
   );
 };
