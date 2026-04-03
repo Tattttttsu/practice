@@ -1,4 +1,4 @@
-import styles from './MountainIntro.module.css';
+import styles from './MountainIntro.module.scss';
 
 export const MountainIntro = () => {
   return (
